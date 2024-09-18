@@ -1,2 +1,2 @@
 # sdtools
-TripleTen Sprint 4 Project covering the basics of Software Engineering
+This app visualizes the popularity and availibility of automobiles by body paint color.
