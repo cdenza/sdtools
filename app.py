@@ -15,8 +15,8 @@ color_map = {'black':'black',
              'other':'yellow'
 }
 bin_count = 12
-hist_width = 800
-hist_height = 600
+# hist_width = 800
+# hist_height = 600
 replacement_colors = ['yellow', 'orange', 'purple', 'green', 'brown', 'custom']
 
 #Craft Dataframe we will use
@@ -81,8 +81,8 @@ highlight_color = st.selectbox(
 )
 
 # Adjust opacity based on selected color
-colors_df['opacity'] = colors_df['paint_color'].apply(
-    lambda x: 1.0 if x == highlight_color else 0.1)
+#colors_df['opacity'] = colors_df['paint_color'].apply(
+#    lambda x: 1.0 if x == highlight_color else 0.1)
 
 # Create scatter plot
 fig_scatter = px.scatter(
@@ -90,7 +90,7 @@ fig_scatter = px.scatter(
     x='date_posted',
     y='model_year',
     color='paint_color',
-    opacity=colors_df['opacity'],
+    # opacity=colors_df['opacity'],
     color_discrete_map=color_map,
     hover_data=['date_sold']
 )
